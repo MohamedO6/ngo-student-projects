@@ -8,54 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header with Dynamic Image -->
     <header>
-        <div class="container">
-            <h1>Upcoming Workshops</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="header-image-container">
+            <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Workshop Image">
+            <h1>Workshops</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Workshops Section -->
     <main>
-        <section class="workshop-list">
-            <div class="container">
-                <h2>Upcoming Online Workshops</h2>
-                <div id="workshopList">
-                    <!-- Workshop 1 -->
-                    <div class="workshop">
-                        <img src="workshop1.jpg" alt="Workshop 1">
-                        <h3>Introduction to Web Development</h3>
-                        <p>Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-                        <button class="btn" onclick="registerWorkshop('Web Development')">Register</button>
-                    </div>
+        <section class="workshops-section">
+            <h2>Upcoming Workshops</h2>
 
-                    <!-- Workshop 2 -->
-                    <div class="workshop">
-                        <img src="workshop2.jpg" alt="Workshop 2">
-                        <h3>Creative Design with Photoshop</h3>
-                        <p>Explore the creative potential of Photoshop and design stunning graphics.</p>
-                        <button class="btn" onclick="registerWorkshop('Creative Design')">Register</button>
-                    </div>
+            <!-- Workshop List -->
+            <div class="workshop-list">
+                <div class="workshop-item">
+                    <h3>Introduction to AI</h3>
+                    <p><strong>Date:</strong> March 10, 2024</p>
+                    <p><strong>Location:</strong> Online</p>
+                    <button onclick="window.location.href='register_workshop.html'">Register Now</button>
                 </div>
+                <div class="workshop-item">
+                    <h3>Advanced Web Development</h3>
+                    <p><strong>Date:</strong> March 15, 2024</p>
+                    <p><strong>Location:</strong> Online</p>
+                    <button onclick="window.location.href='register_workshop.html'">Register Now</button>
+                </div>
+                <!-- Add more workshops as needed -->
             </div>
+
+            <!-- Registration Form -->
+            <section class="workshop-registration">
+                <h3>Register for Workshop</h3>
+                <form action="register_workshop.html" method="post">
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <button type="submit">Submit Registration</button>
+                </form>
+            </section>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
-        </div>
+        <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
