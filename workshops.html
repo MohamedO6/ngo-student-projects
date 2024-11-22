@@ -10,11 +10,11 @@
 <body>
     <header>
         <div class="container">
-            <h1>NGO Student Projects - Workshops</h1>
+            <h1>Upcoming Workshops</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="register.html">Register</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -26,22 +26,24 @@
     </header>
 
     <main>
-        <section class="workshops">
+        <section class="workshop-list">
             <div class="container">
-                <h2>Upcoming Workshops</h2>
-                <div class="workshop-list">
-                    <div class="workshop-card">
-                        <h3>Workshop on "Project Development"</h3>
-                        <p>Join us for a workshop that explores the intricacies of project development. Learn essential skills and strategies.</p>
-                        <img src="workshop1.jpg" alt="Workshop Image">
-                        <button class="btn">Register Now</button>
+                <h2>Upcoming Online Workshops</h2>
+                <div id="workshopList">
+                    <!-- Workshop 1 -->
+                    <div class="workshop">
+                        <img src="workshop1.jpg" alt="Workshop 1">
+                        <h3>Introduction to Web Development</h3>
+                        <p>Learn the basics of web development with HTML, CSS, and JavaScript.</p>
+                        <button class="btn" onclick="registerWorkshop('Web Development')">Register</button>
                     </div>
 
-                    <div class="workshop-card">
-                        <h3>Workshop on "Marketing for Students"</h3>
-                        <p>Learn how to market your ideas and projects effectively to reach a wider audience.</p>
-                        <img src="workshop2.jpg" alt="Workshop Image">
-                        <button class="btn">Register Now</button>
+                    <!-- Workshop 2 -->
+                    <div class="workshop">
+                        <img src="workshop2.jpg" alt="Workshop 2">
+                        <h3>Creative Design with Photoshop</h3>
+                        <p>Explore the creative potential of Photoshop and design stunning graphics.</p>
+                        <button class="btn" onclick="registerWorkshop('Creative Design')">Register</button>
                     </div>
                 </div>
             </div>
@@ -50,8 +52,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 NGO Student Projects | All Rights Reserved</p>
+            <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
