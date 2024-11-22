@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="fade-in">
+        <h1>Submit Your Project</h1>
+        <form>
+            <label for="title">Project Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Project Description:</label>
+            <textarea id="description" name="description" rows="5" required></textarea>
+
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 NGO Student Projects</p>
+    </footer>
+</body>
+</html>
