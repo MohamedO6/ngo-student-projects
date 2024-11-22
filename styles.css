@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
@@ -49,41 +49,88 @@ footer {
     margin-top: 30px;
 }
 
-section {
-    padding: 40px 0;
-}
-
-.btn {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.team {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.team-member {
-    text-align: center;
-    width: 30%;
-}
-
-.project-card {
-    margin: 20px 0;
+.register-form {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project-card img {
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-buttons label {
+    display: inline-block;
+}
+
+input[type="file"] {
+    background-color: #f9f9f9;
+    padding: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
