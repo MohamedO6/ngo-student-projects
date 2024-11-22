@@ -229,6 +229,7 @@ nav ul li a:hover {
     background-color: #002f4d;
 }
 /* Workshops Section */
+/* Workshops Section */
 .workshops-section {
     padding: 40px;
     background-color: #f9f9f9;
@@ -252,7 +253,7 @@ nav ul li a:hover {
 }
 
 .card {
-    width: 23%;
+    width: 23%; /* Each card takes up 1/4 of the row */
     background-color: #fff;
     border: 2px solid #f2f2f2;
     border-radius: 8px;
@@ -300,14 +301,14 @@ nav ul li a:hover {
 }
 
 /* Mobile Responsive Design for the Card Layout */
-@media screen and (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+@media screen and (max-width: 1024px) {
     .card {
-        width: 80%;
+        width: 48%; /* Adjusting for tablets: 2 cards per row */
     }
 }
 
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Stacking for mobile devices */
+    }
+}
