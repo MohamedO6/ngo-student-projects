@@ -86,10 +86,12 @@ nav ul li a:hover {
 
 .projects-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around; /* Distribute items horizontally */
+    align-items: center; /* Center items vertically */
     gap: 20px;
+    overflow-x: auto; /* Allows horizontal scroll if items overflow */
     padding: 0 20px;
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
 }
 
 .project-card {
@@ -97,7 +99,7 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: calc(25% - 20px); /* 4 cards per row */
+    width: 250px; /* Set a fixed width for each card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -141,19 +143,31 @@ nav ul li a:hover {
 
 /* Responsive Design for smaller screens */
 @media (max-width: 1024px) {
+    .projects-container {
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+
     .project-card {
-        width: calc(33.333% - 20px); /* 3 cards per row on medium screens */
+        width: 200px; /* Slightly smaller cards for smaller screens */
     }
 }
 
 @media (max-width: 768px) {
+    .projects-container {
+        gap: 10px; /* Reduce gap on smaller screens */
+    }
+
     .project-card {
-        width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+        width: 180px; /* Smaller cards on mobile */
     }
 }
 
 @media (max-width: 480px) {
+    .projects-container {
+        gap: 5px; /* Reduce gap even more for very small screens */
+    }
+
     .project-card {
-        width: 100%; /* 1 card per row on very small screens */
+        width: 150px; /* Smallest cards on very small screens */
     }
 }
