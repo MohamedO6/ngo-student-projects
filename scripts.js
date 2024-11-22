@@ -48,3 +48,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial call to display all projects
     filterProjects();
 });
+
+// Contact Form Validation and Success Message
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Simple form validation
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+        document.getElementById("successMessage").style.display = "block";
+    } else {
+        alert("Please fill out all fields.");
+    }
+});
+
