@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>NGO Student Projects</h1>
+            <h1>Student Projects</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="register.html">Register</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -23,23 +26,77 @@
     </header>
 
     <main>
-        <section class="projects-list">
+        <section class="projects-filter">
             <div class="container">
                 <h2>Our Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="https://www.stackfield.com/images/blog/20191127-cover_02.png" alt="Project 1">
-                        <h3>Project 1</h3>
-                        <p>A brief description of the project.</p>
-                        <a href="project-details.html" class="btn">Learn More</a>
+                
+                <!-- Filter and Sort Options -->
+                <div class="filter-sort">
+                    <select id="categoryFilter" class="filter">
+                        <option value="all">All Projects</option>
+                        <option value="category1">Category 1</option>
+                        <option value="category2">Category 2</option>
+                        <option value="category3">Category 3</option>
+                    </select>
+                    <select id="sortProjects" class="filter">
+                        <option value="asc">Sort by Name (A-Z)</option>
+                        <option value="desc">Sort by Name (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects List -->
+        <section class="projects">
+            <div class="container">
+                <div class="project-grid" id="projectGrid">
+                    <!-- Project 1 -->
+                    <div class="project-card category1">
+                        <img src="project1.jpg" alt="Project 1">
+                        <h3><a href="project-detail.html">Project 1</a></h3>
+                        <p>Short description of Project 1.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
                     </div>
-                    <div class="project-card">
-                        <img src="https://www.stackfield.com/images/blog/20191127-cover_02.png" alt="Project 2">
-                        <h3>Project 2</h3>
-                        <p>A brief description of the project.</p>
-                        <a href="project-details.html" class="btn">Learn More</a>
+
+                    <!-- Project 2 -->
+                    <div class="project-card category2">
+                        <img src="project2.jpg" alt="Project 2">
+                        <h3><a href="project-detail.html">Project 2</a></h3>
+                        <p>Short description of Project 2.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
                     </div>
-                    <!-- More project cards can go here -->
+
+                    <!-- Project 3 -->
+                    <div class="project-card category3">
+                        <img src="project3.jpg" alt="Project 3">
+                        <h3><a href="project-detail.html">Project 3</a></h3>
+                        <p>Short description of Project 3.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card category1">
+                        <img src="project4.jpg" alt="Project 4">
+                        <h3><a href="project-detail.html">Project 4</a></h3>
+                        <p>Short description of Project 4.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card category2">
+                        <img src="project5.jpg" alt="Project 5">
+                        <h3><a href="project-detail.html">Project 5</a></h3>
+                        <p>Short description of Project 5.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project-card category3">
+                        <img src="project6.jpg" alt="Project 6">
+                        <h3><a href="project-detail.html">Project 6</a></h3>
+                        <p>Short description of Project 6.</p>
+                        <a href="project-detail.html" class="btn">View Details</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -47,8 +104,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 NGO Student Projects | All Rights Reserved</p>
+            <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
