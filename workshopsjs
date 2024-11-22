@@ -1,4 +1,4 @@
-// Array of workshops data (this can be extended or fetched from a database)
+// Array of 8 workshops data
 const workshops = [
     {
         title: "Introduction to Web Development",
@@ -39,6 +39,20 @@ const workshops = [
         title: "Mobile App Development",
         date: "May 15, 2024",
         description: "This workshop covers the basics of mobile app development using React Native.",
+        imgSrc: "https://via.placeholder.com/350x250",
+        link: "workshop-details.html"
+    },
+    {
+        title: "UI/UX Design Fundamentals",
+        date: "June 1, 2024",
+        description: "Learn the key principles of user interface and user experience design.",
+        imgSrc: "https://via.placeholder.com/350x250",
+        link: "workshop-details.html"
+    },
+    {
+        title: "Blockchain and Cryptocurrencies",
+        date: "June 20, 2024",
+        description: "This workshop will dive into blockchain technology and the basics of cryptocurrencies.",
         imgSrc: "https://via.placeholder.com/350x250",
         link: "workshop-details.html"
     }
