@@ -83,3 +83,28 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // --- Contact Form Submission --- //
+    const contactForm = document.getElementById("contactForm");
+    const contactSuccessMessage = document.getElementById("successMessage");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form from submitting normally
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Basic validation
+            if (name && email && message) {
+                contactSuccessMessage.style.display = "block"; // Show success message
+                contactForm.reset(); // Reset form fields
+            } else {
+                alert("Please fill out all fields.");
+            }
+        });
+    }
+});
+
