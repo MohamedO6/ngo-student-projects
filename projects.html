@@ -3,69 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects</title>
+    <title>Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header with Dynamic Image -->
     <header>
-        <div class="container">
+        <div class="header-image-container">
+            <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Project Design">
             <h1>Our Projects</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Projects Section -->
     <main>
-        <section class="filter-sort">
-            <label for="categoryFilter">Filter by category:</label>
-            <select id="categoryFilter">
-                <option value="all">All</option>
-                <option value="art">Art</option>
-                <option value="science">Science</option>
-                <option value="technology">Technology</option>
-            </select>
-
-            <label for="sortBy">Sort by:</label>
-            <select id="sortBy">
-                <option value="asc">A-Z</option>
-                <option value="desc">Z-A</option>
-            </select>
-        </section>
-
-        <section class="projects-container">
-            <div class="project-card art">
-                <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Project 1">
-                <h3>Art Project 1</h3>
-                <p>A brief description of Art Project 1.</p>
-                <a href="project1.html" class="btn">View Details</a>
-            </div>
-
-            <div class="project-card science">
-                <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Project 2">
-                <h3>Science Project 2</h3>
-                <p>A brief description of Science Project 2.</p>
-                <a href="project2.html" class="btn">View Details</a>
-            </div>
-
-            <div class="project-card technology">
-                <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Project 3">
-                <h3>Technology Project 3</h3>
-                <p>A brief description of Technology Project 3.</p>
-                <a href="project3.html" class="btn">View Details</a>
-            </div>
-
-            <div class="project-card art">
-                <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Project 4">
-                <h3>Art Project 4</h3>
-                <p>A brief description of Art Project 4.</p>
-                <a href="project4.html" class="btn">View Details</a>
+        <section class="projects-section">
+            <h2>Our Recent Projects</h2>
+            <div class="projects-container">
+                <!-- Project Cards -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h3>Project Title 1</h3>
+                    <p>Description of the project goes here. It is a brief overview of what this project is about.</p>
+                    <a href="project1.html" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h3>Project Title 2</h3>
+                    <p>Description of the project goes here. It is a brief overview of what this project is about.</p>
+                    <a href="project2.html" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h3>Project Title 3</h3>
+                    <p>Description of the project goes here. It is a brief overview of what this project is about.</p>
+                    <a href="project3.html" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                    <h3>Project Title 4</h3>
+                    <p>Description of the project goes here. It is a brief overview of what this project is about.</p>
+                    <a href="project4.html" class="project-link">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
             </div>
         </section>
     </main>
@@ -74,6 +64,5 @@
         <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
     </footer>
 
-    <script src="scripts.js"></script>
 </body>
 </html>
