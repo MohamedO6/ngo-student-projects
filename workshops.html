@@ -12,8 +12,8 @@
     <!-- Header with Dynamic Image -->
     <header>
         <div class="header-image-container">
-            <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Workshop Image">
-            <h1>Workshops</h1>
+            <img src="https://www.ntaskmanager.com/wp-content/uploads/2020/10/project-design-in-project-management.png" alt="Workshop Design">
+            <h1>Upcoming Workshops</h1>
         </div>
         <nav>
             <ul>
@@ -28,34 +28,38 @@
     <!-- Workshops Section -->
     <main>
         <section class="workshops-section">
-            <h2>Upcoming Workshops</h2>
-
-            <!-- Workshop List -->
-            <div class="workshop-list">
-                <div class="workshop-item">
-                    <h3>Introduction to AI</h3>
-                    <p><strong>Date:</strong> March 10, 2024</p>
-                    <p><strong>Location:</strong> Online</p>
-                    <button onclick="window.location.href='register_workshop.html'">Register Now</button>
+            <h2>Our Upcoming Workshops</h2>
+            <div class="workshops-container">
+                <!-- Workshop Cards -->
+                <div class="workshop-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Workshop Image">
+                    <h3>Workshop Topic 1</h3>
+                    <div class="workshop-date">Date: January 15, 2024</div>
+                    <p>Description of the workshop goes here. A brief overview of what will be covered.</p>
+                    <a href="workshop1.html" class="workshop-link">View Workshop</a>
                 </div>
-                <div class="workshop-item">
-                    <h3>Advanced Web Development</h3>
-                    <p><strong>Date:</strong> March 15, 2024</p>
-                    <p><strong>Location:</strong> Online</p>
-                    <button onclick="window.location.href='register_workshop.html'">Register Now</button>
+                <div class="workshop-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Workshop Image">
+                    <h3>Workshop Topic 2</h3>
+                    <div class="workshop-date">Date: February 20, 2024</div>
+                    <p>Description of the workshop goes here. A brief overview of what will be covered.</p>
+                    <a href="workshop2.html" class="workshop-link">View Workshop</a>
                 </div>
-                <!-- Add more workshops as needed -->
+                <div class="workshop-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Workshop Image">
+                    <h3>Workshop Topic 3</h3>
+                    <div class="workshop-date">Date: March 10, 2024</div>
+                    <p>Description of the workshop goes here. A brief overview of what will be covered.</p>
+                    <a href="workshop3.html" class="workshop-link">View Workshop</a>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Workshop Image">
+                    <h3>Workshop Topic 4</h3>
+                    <div class="workshop-date">Date: April 5, 2024</div>
+                    <p>Description of the workshop goes here. A brief overview of what will be covered.</p>
+                    <a href="workshop4.html" class="workshop-link">View Workshop</a>
+                </div>
             </div>
-
-            <!-- Registration Form -->
-            <section class="workshop-registration">
-                <h3>Register for Workshop</h3>
-                <form action="register_workshop.html" method="post">
-                    <input type="text" name="fullName" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <button type="submit">Submit Registration</button>
-                </form>
-            </section>
         </section>
     </main>
 
