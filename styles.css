@@ -228,3 +228,86 @@ nav ul li a:hover {
 .submit-project-form button:hover {
     background-color: #002f4d;
 }
+/* Workshops Section */
+.workshops-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.workshops-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Cards for Workshops */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 23%;
+    background-color: #fff;
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    color: #004d7f;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.card .btn {
+    background-color: #004d7f;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card .btn:hover {
+    background-color: #002f4d;
+}
+
+/* Mobile Responsive Design for the Card Layout */
+@media screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
