@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NGO Student Projects - Workshops</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="workshops">
+            <div class="container">
+                <h2>Upcoming Workshops</h2>
+                
+                <!-- Workshop 1 -->
+                <div class="workshop-card">
+                    <h3>Workshop on "Innovative Project Development"</h3>
+                    <p>Join us for an in-depth workshop on how to develop innovative projects with real-world applications.</p>
+                    <img src="workshop1.jpg" alt="Workshop Image">
+                    <video controls>
+                        <source src="workshop1-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><strong>Available Slots:</strong> 10</p>
+
+                    <form action="#" method="POST" class="workshop-register">
+                        <label for="workshop-name">Full Name:</label>
+                        <input type="text" id="workshop-name" name="workshop-name" required>
+                        
+                        <label for="workshop-email">Email:</label>
+                        <input type="email" id="workshop-email" name="workshop-email" required>
+
+                        <label for="workshop-date">Choose Date:</label>
+                        <select id="workshop-date" name="workshop-date">
+                            <option value="2024-12-01">December 1, 2024</option>
+                            <option value="2024-12-15">December 15, 2024</option>
+                        </select>
+
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+
+                <!-- Workshop 2 -->
+                <div class="workshop-card">
+                    <h3>Workshop on "Marketing for Students"</h3>
+                    <p>This workshop will cover how students can market their projects and ideas effectively.</p>
+                    <img src="workshop2.jpg" alt="Workshop Image">
+                    <video controls>
+                        <source src="workshop2-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><strong>Available Slots:</strong> 15</p>
+
+                    <form action="#" method="POST" class="workshop-register">
+                        <label for="workshop-name">Full Name:</label>
+                        <input type="text" id="workshop-name" name="workshop-name" required>
+                        
+                        <label for="workshop-email">Email:</label>
+                        <input type="email" id="workshop-email" name="workshop-email" required>
+
+                        <label for="workshop-date">Choose Date:</label>
+                        <select id="workshop-date" name="workshop-date">
+                            <option value="2024-12-02">December 2, 2024</option>
+                            <option value="2024-12-16">December 16, 2024</option>
+                        </select>
+
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NGO Student Projects | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
