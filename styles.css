@@ -1,8 +1,9 @@
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
 }
 
 /* Header */
@@ -38,95 +39,97 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    color: white;
-    text-align: center;
+/* Projects Filter Section */
+.projects-filter {
+    background-color: #f1f1f1;
+    padding: 20px 0;
 }
 
-.hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.hero-content .btn {
-    background-color: #f7b731;
-    color: white;
-    padding: 12px 30px;
+.filter {
+    padding: 10px;
     border-radius: 5px;
-    font-size: 1rem;
-    text-decoration: none;
+    border: 1px solid #ccc;
 }
 
-.hero-content .btn:hover {
-    background-color: #e67e22;
+/* Projects Section */
+.projects {
+    padding: 40px 0;
 }
 
-/* Products and Workshops Grid */
-.product-list, .workshop-list {
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
-/* Cards */
-.product-card, .workshop-card {
+/* Project Card */
+.project-card {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
 }
 
-.product-card:hover, .workshop-card:hover {
+.project-card:hover {
     transform: translateY(-10px);
 }
 
-.product-card img, .workshop-card img {
+.project-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
 }
 
-.product-card h3, .workshop-card h3 {
+.project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.price {
-    font-size: 1.2rem;
-    color: green;
-    margin: 10px 0;
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
-.btn {
-    background-color: #0056b3;
+.project-card a {
+    text-decoration: none;
+    color: #f7b731;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.project-card .btn {
+    padding: 10px 20px;
+    background-color: #f7b731;
     color: white;
-    padding: 12px 20px;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #004494;
+.project-card .btn:hover {
+    background-color: #ffbb33;
 }
 
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
