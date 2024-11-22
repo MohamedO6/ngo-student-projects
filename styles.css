@@ -1,76 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* Header */
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
-    background-color: #0056b3;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
     color: white;
-    padding: 50px 0;
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.hero-content h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.hero-content p {
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
-.hero .btn {
+.hero-content .btn {
     background-color: #f7b731;
     color: white;
     padding: 12px 30px;
-    text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
+    text-decoration: none;
 }
 
-.hero .btn:hover {
+.hero-content .btn:hover {
     background-color: #e67e22;
 }
 
-/* Featured Products Section */
-.featured-products {
-    padding: 40px 0;
-    background-color: #f4f4f4;
-}
-
-.featured-products h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.product-list {
+/* Products and Workshops Grid */
+.product-list, .workshop-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.product-card {
+/* Cards */
+.product-card, .workshop-card {
     background-color: white;
     padding: 20px;
-    text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-.product-card img {
-    max-width: 100%;
+.product-card:hover, .workshop-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img, .workshop-card img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.product-card h3 {
-    margin-top: 15px;
+.product-card h3, .workshop-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.product-card .price {
+.price {
     font-size: 1.2rem;
     color: green;
     margin: 10px 0;
 }
 
-.product-card .btn {
+.btn {
     background-color: #0056b3;
     color: white;
     padding: 12px 20px;
@@ -79,53 +119,14 @@
     cursor: pointer;
 }
 
-.product-card .btn:hover {
+.btn:hover {
     background-color: #004494;
 }
 
-/* Featured Workshops Section */
-.featured-workshops {
-    padding: 40px 0;
-}
-
-.featured-workshops h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.workshop-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.workshop-card {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.workshop-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.workshop-card h3 {
-    margin-top: 15px;
-}
-
-.workshop-card .btn {
-    background-color: #0056b3;
+/* Footer */
+footer {
+    background-color: #343a40;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.workshop-card .btn:hover {
-    background-color: #004494;
+    padding: 20px 0;
+    text-align: center;
 }
