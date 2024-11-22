@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Your Project</title>
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>NGO Student Projects</h1>
+            <h1>Register</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="register.html">Register</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -23,61 +26,36 @@
     </header>
 
     <main>
-        <section class="register-form">
+        <section class="registration-form">
             <div class="container">
-                <h2>Register Your Project</h2>
-                <p>Please fill out the form below to submit your project.</p>
+                <h2>Sign Up to Share Your Projects</h2>
+                <form id="registrationForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                    </div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    </div>
+                    <label for="category">Choose a Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="art">Art</option>
+                        <option value="science">Science</option>
+                        <option value="technology">Technology</option>
+                    </select>
 
-                    <div class="form-group">
-                        <label for="project-title">Project Title</label>
-                        <input type="text" id="project-title" name="project-title" placeholder="Enter your project title" required>
-                    </div>
+                    <label>Interests:</label>
+                    <input type="checkbox" id="interest1" name="interest" value="coding">
+                    <label for="interest1">Coding</label>
+                    <input type="checkbox" id="interest2" name="interest" value="design">
+                    <label for="interest2">Design</label>
 
-                    <div class="form-group">
-                        <label for="description">Project Description</label>
-                        <textarea id="description" name="description" rows="5" placeholder="Describe your project" required></textarea>
-                    </div>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
 
-                    <div class="form-group">
-                        <label>Project Category</label>
-                        <div class="radio-buttons">
-                            <label>
-                                <input type="radio" name="category" value="Technology" required> Technology
-                            </label>
-                            <label>
-                                <input type="radio" name="category" value="Science" required> Science
-                            </label>
-                            <label>
-                                <input type="radio" name="category" value="Art" required> Art
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Upload Project Files</label>
-                        <input type="file" id="project-file" name="project-file" accept="application/pdf, image/*">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="terms">
-                            <input type="checkbox" id="terms" name="terms" required> I agree to the <a href="#">Terms & Conditions</a>.
-                        </label>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn">Submit Project</button>
-                    </div>
+                    <button type="submit" class="btn">Submit</button>
                 </form>
             </div>
         </section>
@@ -85,8 +63,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 NGO Student Projects | All Rights Reserved</p>
+            <p>&copy; 2024 Student Projects NGO | All rights reserved</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
