@@ -1,0 +1,362 @@
+/* General Body Style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #0d6efd;
+    color: white;
+}
+
+header .header-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+/* Global Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #084298;
+}
+
+/* Contact Section */
+.contact-form-box {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0d6efd;
+    margin: 0 auto;
+}
+
+/* Form Fieldset */
+fieldset {
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #e9f7fe;
+}
+
+legend {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0d6efd;
+    background-color: #e9f7fe;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #0d6efd;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #084298;
+}
+
+.success-message, .error-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Projects Section */
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    text-align: center;
+    color: #0d6efd;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.project-card .view-details {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.project-card .view-details:hover {
+    text-decoration: underline;
+}
+
+/* Workshops Section */
+.workshops-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.workshop-card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.workshop-card:hover {
+    transform: translateY(-5px);
+}
+
+.workshop-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.workshop-card h3 {
+    text-align: center;
+    color: #0d6efd;
+}
+
+.workshop-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.workshop-card .register-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.workshop-card .register-btn:hover {
+    background-color: #084298;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .projects-section, .workshops-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card, .workshop-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1, .submit-btn, .project-card h3, .workshop-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .projects-section, .workshops-section {
+        gap: 10px;
+    }
+}
+
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container for Project Cards */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual Project Card */
+.project-card {
+    width: calc(25% - 20px); /* 4 cards per row */
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Project Card Title */
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+/* Project Card Description */
+.project-card p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* View Details Link */
+.project-card .project-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .project-link:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1200px) {
+    .project-card {
+        width: calc(33.33% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* 1 card per row */
+    }
+}
+
